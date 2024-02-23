@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. PBL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="button.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    html{
+        background-color: rgb(109, 1, 109);
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+
+    }
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #ffb300;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 50px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 25%;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    aside p{
+        font-family: cursive;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #5ab900;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid white;
+      padding: 8px;
+    }
+
+    /* td.but{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    tr:nth-child(1) {
+      background-color: rgb(156, 156, 0);
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+
+    img.profile{
+      width: 95%;
+      filter: drop-shadow(0px 0px 30px black);
+    }
+
+    img.music{
+      filter: brightness(0);
+    }
+
+    a.guitar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    img.guitar{
+      width: 100%;
+    }
+
+    img.piano{
+      width: 100%;
+    }
+
+    img.flute{
+      width: 100%;
+    }
+
+    /* .feedback{
+      border: 2px solid black;
+      width: 40vh;
+    } */
+
+    .submit{
+      width: 20vh;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 0.8rem;
+    display: flex;
+    background: green;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px
+    }
+
+    button.guitar{
+      background: linear-gradient(90deg, #1fff05, #f8ff00);
+      font-size: 0.8rem;
+    }
+
+    button.guitar:hover{
+      transform: scale(1.1);
+      transition: 0.3s;
+      background: linear-gradient(90deg, #1fff05, #f8ff00);
+      font-size: 0.8rem;
+    }
+
+    h1{
+      text-shadow: 4px 4px 4px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Mr PBL</h1>
+      <img class="music" src="music.png" alt="" class="music">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img class="profile" src="profile.png" width="160px" />
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <br><br>
+      <p> “Where words fail, music speaks.”<br>-Aristotle</p>
+    </aside>
+    <main class="content">
+      
+      <h1>How Can I Help You?</h1>
+      <table>
+        
+          <tr>
+            <td><img class="guitar" src="guitar.png" alt=""></td>
+          <td><img class="guitar" src="piano.png" alt=""></td>
+          <td><img class="guitar" src="flute.png" alt=""></td>
+          </tr>
+
+        <tr>
+          <th>Guitar</th>
+          <th>Piano</th>
+          <th>Flute</th>
+        </tr>
+        <tr>
+          <td class="but"><a href="indexguitarfret.html" class="guitar"><button class="guitar">Start learning</button></a></td>
+          <td class="but"><a href="indexpiano.html" class="guitar"><button class="guitar">Start learning</button></a></td>
+          <td class="but"><a href="vflute.html" class="guitar"><button class="guitar">Start learning</button></a></td>
+        </tr>
+        <tr>
+      </table>
+      <h1>About</h1>
+      <p>We're Soocial, a leading branding agency with a passion for creating memorable names and internationally-renowned brands. Since our launch, we’ve worked on more than 1,000 projects for clients around the world. We’re big enough to handle massive projects, and yet also nimble enough to come up with names on demand that hit every time.</p>
+      <h1>Start now</h1>
+      <p>because music is best!!!</p>
+      <hr><br>
+      <h1>Share your Feedback</h1>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <label class="feedback" for=""> Feedback: <input type="text" name="Enter your Feedback"></label><br>
+        <button class="submit">submit</button><br>
+      </form>
+    </main>
+    <footer class="footer">&copy; Copyright Mr. PBL (S.E. 2024)</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+    background-color: #1abc9c;
+}
+
+#canvas {
+    width: 60%;
+    height: 240px;
+    position: relative;
+    font-family: "Open Sans";
+    left: 28%;
+}
